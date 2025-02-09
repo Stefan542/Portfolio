@@ -1,0 +1,258 @@
+body {
+    background: linear-gradient(45deg, #020c1b, #0a192f);
+    color: #a0a0a0;
+    margin: 0; /* Remove default body margins */
+    overflow-x: hidden; /* Prevent horizontal scroll on smaller screens */
+}
+
+.start {
+    text-align: center;
+    margin-top: 15%;
+    min-height: 100vh;
+    padding: 20px; /* Add padding for smaller screens */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+#nome {
+    font-size: 3em; /* Adjusted font size */
+    color: #636060;
+}
+
+#function {
+    font-size: 1.5em; /* Adjusted font size */
+}
+
+#hbd {
+    font-size: 3em; /* Adjusted font size */
+    font-style: italic;
+}
+
+.Habilidades, .skills, .projects {
+    background-color: linear-gradient(45deg, #020c1b, #0a192f);
+    min-height: 100vh;
+    width: 95%; /* Make container responsive */
+    max-width: 600px; /* Set a maximum width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding */
+    box-sizing: border-box;
+}
+
+.cont {
+    text-align: center;
+}
+
+.borderdiv, #contu, .skillUXUI, .SMCRD {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px auto; /* Center and add margin */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 95%; /* Make cards responsive */
+    max-width: 600px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Media query for smaller screens */
+@media (min-width: 768px) {
+    .borderdiv, #contu, .skillUXUI, .SMCRD {
+        flex-direction: row; /* Restore horizontal layout on larger screens */
+    }
+}
+
+
+#skillReactt, #skilhtcs, #IconUIUX, .SMIcon {
+    font-size: 2rem; /* Adjusted font size */
+    color: #61dafb;
+}
+
+.progress-container {
+    width: 150px; /* Adjusted size */
+    height: 150px; /* Adjusted size */
+    background-color: #eee;
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #61dafb;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+.progress-bar span {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 0.7em; /* Adjusted font size */
+    mix-blend-mode: difference;
+}
+
+#txt, #SMTXT {
+    margin: 0 0 10px 0;
+    font-style: normal;
+    color: #666;
+    text-align: left; /* Align text to the left within the card */
+}
+
+.SMCRD:hover, .skillUXUI:hover, #contu:hover, .borderdiv:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: #61dafb;
+    background-color: #f9f9f9;
+}
+
+.SMCRD:active, .skillUXUI:active, #contu:active, .borderdiv:active {
+    transform: translateY(0);
+    transition: all 0.1s ease;
+}
+
+#PRJTXT {
+    font-size: 3em; /* Adjusted font size */
+    color: #636060;
+    text-align: center;
+    font-style: italic;
+}
+.project1, .project2, .project3{
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.project1:hover, .project2:hover, .project3:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: #61dafb;
+    background-color: #f9f9f9;
+}
+.project1:active ,.project2:active, .project3:active{
+    transform: translateY(0);
+    transition: all 0.1s ease;
+
+}
+#SMDTXT, #ECTXT, #TMTXT,#f_d, #f_T, #f_E{
+    text-align: center;
+}
+.demo-link {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 8px 8px 0 0;
+    text-decoration: none;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 4px;
+    font-size: 0.9em;
+    transition: all 0.2s ease;
+    border: 1px solid #ddd;
+    text-align: center;
+    align-items: center;
+    margin: 0 80px;
+    margin-bottom: 5px;
+
+}
+
+.demo-link:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    width: 100%;
+    padding: 20px;  /* Add padding to the content area */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+.content h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.content p {
+    margin: 0 0 15px 0;
+    color: #666;
+    line-height: 1.4;
+}
+.GOOL{
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+#OBJ{
+    text-align: justify;
+}
+#pri{
+    font-size: 2.1rem;
+    color: #61dafb;;
+}
+.flecmg{
+    background-color: #000;
+    min-height: 100vh;
+}
+.fu{
+    text-align: center;
+    font-size: 2rem;
+}
+.cnttct {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Aumentei o espaçamento */
+    padding: 30px; /* Aumentei o padding */
+}
+
+.cnttct > div {
+    position: relative;
+    width: 250px; /* Largura maior */
+    height: 180px; /* Altura maior */
+    border: 1px solid #ccc;
+    border-radius: 15px; /* Arredondamento maior */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em; /* Tamanho dos ícones */
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Transição para a animação */
+}
+
+.cnttct a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.3em; /* Ajustei o tamanho do texto */
+    transition: background-color 0.3s ease;
+}
+
+.cnttct a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cnttct i {
+    z-index: 1;
+}
+
+/* Animação ao passar o mouse */
+.cnttct > div:hover {
+    transform: scale(1.1); /* Aumenta a escala em 10% */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
